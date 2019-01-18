@@ -1,6 +1,6 @@
 # Makefile for staging directory
 
-subdir-ccflags-y += -Werror
+#subdir-ccflags-y += -Werror
 
 # fix for build system bug...
 obj-$(CONFIG_STAGING)		+= staging.o
@@ -48,3 +48,4 @@ obj-$(CONFIG_MTD_SPINAND_MT29F)	+= mt29f_spinand/
 obj-$(CONFIG_GS_FPGABOOT)	+= gs_fpgaboot/
 obj-$(CONFIG_CRYPTO_SKEIN)	+= skein/
 obj-$(CONFIG_UNISYSSPAR)	+= unisys/
+obj-$(CONFIG_NANOHUB)		+= nanohub/
